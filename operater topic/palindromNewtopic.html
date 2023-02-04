@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+    <h2>using of palindram</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function palindramMethod(){
+                let str = "arbaj";
+                let str2 = str;
+            console.log(str2);
+
+            let splitData = str2.split('');
+            console.log(splitData);
+
+            let revData = splitData.reverse('');
+            console.log(revData);
+
+            let joinData = revData.join('');
+            console.log(joinData);
+
+            if (joinData==str){
+                console.log(str +" is palindrom");
+            }
+            else{
+                console.log(str + " is not palindrom");
+            }
+        }
+        palindramMethod();
+    </script>
+
+</body>
+
+</html>

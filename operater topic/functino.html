@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>using of string java SCRipt></h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function weekList(){
+            let weekSalary = [100,200,300,400,500,50000,4000,3000];
+               
+                let baiscSalary = [];
+                let adwanceSalary =[];
+                let shot = weekSalary.length;
+
+                for (let index = 0; index < shot; index++) {
+                    const element = weekSalary[index];
+                   // console.log(element);
+
+                    if(element<=500){
+                        baiscSalary.push(element);
+                    }
+                    if(element>500){
+                        adwanceSalary.push(element);
+                    }
+                    
+                }
+                console.log(baiscSalary);
+                console.log(adwanceSalary);
+        }   
+
+          weekList();
+       
+            
+       
+
+            
+                
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

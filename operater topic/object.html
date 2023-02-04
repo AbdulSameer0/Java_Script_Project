@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+   <h2>using of string java SCRipt></h2>
+
+   <p id="demo"></p>
+
+   <script>
+
+      employeeName = [
+         { name: "raja", salary: 10000, OT: 5000, tx: 10 },
+         { name: "arbaj", salary: 20000, OT: 500, tx: 3 },
+         { name: "saif", salary: 140000, OT: 400, tx: 3 },
+         { name: "moris", salary: 50000, OT: 100, tx: 3 },
+         { name: "ijju", salary: 160000, OT: 600, tx: 3 },
+         { name: "vafeem", salary: 50000, OT: 10, tx: 3 },
+         { name: "raju", salary: 80000, OT: 50, tx: 3 },
+         { name: "sonu", salary: 60000, OT: 500, tx: 3 },
+         { name: "shahbaj", salary: 1000, OT: 10000, tx: 3 },
+         { name: "aftab", salary: 100, OT: 98000, tx: 3 },
+                     ];
+
+      let info = "ki salary itne hai";
+
+
+      employeeName.forEach(function (element) {
+         let tax = element.tx;
+         let amount = element.salary / 100 * (100 - tax);
+         let t = add(amount, element.OT);
+         console.log(element.name + " " + info + " " + t);
+      });
+
+      function add(s, d) {
+         let c = s + d;
+         return c;
+      }
+   </script>
+
+</body>
+
+</html>

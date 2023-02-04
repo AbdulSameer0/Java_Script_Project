@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>series in the java script</h1>
+
+<p id="demo"></p>
+
+<script>
+  
+    var days = ["01 monday","02 tuseday","03 wednesday","04 thurday","05 friday","06 saturday","07 sunday"];
+
+
+           
+        let number = [];
+        let weeks = [];
+
+
+                for (let i = 0; i < days.length; i++) {
+                    const element = days[i];
+
+                    let fullElement = element.length;
+                    console.log(fullElement);
+
+                    let num = element.slice(0,2);
+                    console.log(num);
+                    number.push(num);
+
+                    let day = element.slice(3,fullElement);
+                    console.log(day);
+                    weeks.push(day);
+
+
+                    
+                }
+
+      
+
+
+
+
+
+    
+
+   
+            
+
+    
+                    
+     
+
+</script>
+
+</body>
+</html>

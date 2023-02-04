@@ -1,0 +1,35 @@
+<html>
+
+<body>
+
+    <h2>using of sorting method in numbers</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function sortingNumber() {
+            let arr = [23, 32, 45, 4, 65, 35, 57, 78, 23, 33];
+            let t = 0;
+            for (let i = 0; i < arr.length; i++) {
+
+                for (let j = 1 + i; j < arr.length; j++) {
+
+                    if (arr[i] > arr[j]){
+
+                        t = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = t;
+                }
+
+            }
+        }
+            console.log(arr);
+        }
+        sortingNumber();
+
+
+    </script>
+
+</body>
+
+</html>
